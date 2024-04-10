@@ -58,6 +58,19 @@ function game(){
     update();
 }
 
+document.addEventListener("keydown", (e) => {
+    if (e.code == "Escape") {
+        isPause = !isPause;
+        if(isPause){
+            cancelAnimationFrame(animationId);
+            
+        }
+        else{
+            animationId = requestAnimationFrame(game);
+        }
+    }
+  });
+
 //Пауза
 pause.addEventListener("click", () =>{
     isPause = !isPause;
