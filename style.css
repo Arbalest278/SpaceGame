@@ -29,6 +29,10 @@ body{
     position: absolute;
 }
 
+#exit_btn{
+    padding-bottom: 180px;
+    position: relative;
+}
 #menu_btn{
     padding-top: 120px;
     position: relative;

@@ -144,6 +144,7 @@ function update(){
                 aster[i].del=1;
                 fire.splice(j,1);
                 score++;
+                localStorage.setItem("score", score);
                 break;
             }
             if(aster[i].del==1) aster.splice(i,1);
@@ -155,8 +156,6 @@ function update(){
             break;
         }
     }
-
-   
 }
 
 //Отображение объектов
